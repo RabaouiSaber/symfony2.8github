@@ -1,0 +1,26 @@
+# Learn more about services, parameters and containers at
+# https://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    #service_name:
+    #    class: AppBundle\Directory\ClassName
+    #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+
+
+    admin.category:
+            class: AppBundle\Admin\CategoryAdmin
+            arguments: [~, AppBundle\Entity\Category, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Category }
+            public: true
+            
+    
+            
+    
+    sonata.block.service.myblock:
+        class: AppBundle\Block\MyBlockService
+        arguments: [ service , @templating ]
+        tags:
+            - { name: sonata.block }

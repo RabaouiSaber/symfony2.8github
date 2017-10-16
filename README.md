@@ -1,4 +1,4 @@
-# symfony2.8github
-Symfony2.8 &amp;&amp; sonataProject &amp;&amp; Git
+Symfony2.8
+==========
 
-RABAOUI Saber
+A Symfony project created on October 13, 2017, 10:03 am.
